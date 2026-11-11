@@ -6,7 +6,7 @@
 }:
 mkYaziPlugin (finalAttrs: {
     pname = "enhance-piper.yazi";
-    version = "unstable-${date}";
+    version = date;
 
     src = inputs.${finalAttrs.pname};
 

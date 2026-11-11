@@ -6,7 +6,7 @@
 }:
 mkYaziPlugin (finalAttrs: {
     pname = "file-extra-metadata.yazi";
-    version = "unstable-${date}";
+    version = date;
 
     src = inputs.${finalAttrs.pname};
 
