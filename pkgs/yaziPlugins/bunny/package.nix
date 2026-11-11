@@ -1,12 +1,12 @@
 {
     inputs,
-    date,
+    timestampToDate,
     lib,
     mkYaziPlugin,
 }:
 mkYaziPlugin (finalAttrs: {
     pname = "bunny.yazi";
-    version = date;
+    version = timestampToDate inputs._meta."bunny.yazi".lastModified;
 
     src = inputs.${finalAttrs.pname};
 
