@@ -170,11 +170,11 @@
   },
   "zotlit": {
     "type": "fixed",
-    "url": "https://github.com/aidenlx/zotlit/releases/download/zt-2.2.2/zotlit-zotero-2.2.2.xpi",
-    "sha256": "sha256-4q+q5fcvnsyB6RgEPxBmnZ+3ilvDBSoQ0RLh4zTrJIM=",
+    "url": "https://github.com/aidenlx/zotlit/releases/download/zt-2.2.3/zotlit-zotero-2.2.3.xpi",
+    "sha256": "sha256-3EqFHy3NN9UYOv3QZRgXngFvxihMkETtyV3JIBuHlfU=",
     "unpack": "file",
-    "tag": "zt-2.2.2",
-    "version": "2.2.2"
+    "tag": "zt-2.2.3",
+    "version": "2.2.3"
   },
   "zotmoov": {
     "type": "fixed",
