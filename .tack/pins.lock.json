@@ -104,9 +104,9 @@
     "type": "github",
     "owner": "nixos",
     "repo": "nixpkgs",
-    "rev": "2074cc672349f14240fb7ea90d509e0b643e9dd4",
-    "narHash": "sha256-E0hYoioqUtM2XmPPvYYpJgdADF5AW9oOoPSEiM9dTHQ=",
-    "lastModified": 1794495034
+    "rev": "5d2b81a7a3be3e2f832879028e4d60abbf58e9a0",
+    "narHash": "sha256-3GnIGIy15bMduoS9RnWqKTmsJLWThla42UFtm0S7+us=",
+    "lastModified": 1794644783
   },
   "systems": {
     "type": "github",
@@ -120,9 +120,9 @@
     "type": "github",
     "owner": "manic-systems",
     "repo": "tack",
-    "rev": "c107b0fc252b0b33b01e6b7d6111aaaedc49613e",
-    "narHash": "sha256-bdNCaHUF3c8hgsYw6FCI+lGcZanZIDxt2Sefu5AsERY=",
-    "lastModified": 1794450976
+    "rev": "4bb81b579e2072b02f8a7a56e9da317e6faf5407",
+    "narHash": "sha256-PSwYLv40mPN9//mGLA+5Q3YUPfS16dMTrd4BARJhCuo=",
+    "lastModified": 1794730228
   },
   "treefmt-nix": {
     "type": "github",
@@ -170,11 +170,11 @@
   },
   "zotlit": {
     "type": "fixed",
-    "url": "https://github.com/aidenlx/zotlit/releases/download/zt-2.2.3/zotlit-zotero-2.2.3.xpi",
-    "sha256": "sha256-3EqFHy3NN9UYOv3QZRgXngFvxihMkETtyV3JIBuHlfU=",
+    "url": "https://github.com/aidenlx/zotlit/releases/download/zt-2.2.4/zotlit-zotero-2.2.4.xpi",
+    "sha256": "sha256-dd/TyUM9XNMBjHUueEDlVQXeo/S9OP49rnJlvpDEouQ=",
     "unpack": "file",
-    "tag": "zt-2.2.3",
-    "version": "2.2.3"
+    "tag": "zt-2.2.4",
+    "version": "2.2.4"
   },
   "zotmoov": {
     "type": "fixed",
