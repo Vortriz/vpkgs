@@ -27,10 +27,10 @@ jobs:
                   nix develop --command -- nix-fast-build \
                                   --no-nom \
                                   --skip-cached \
-                                  --retries=3 \
+                                  --retries 3 \
                                   --cachix-cache vortriz \
                                   --systems "x86_64-linux" \
-                                  --flake=.#legacyPackages
+                                  --flake .#legacyPackages
 
             - uses: EndBug/add-and-commit@v11
               with:
