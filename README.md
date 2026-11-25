@@ -40,6 +40,7 @@ Then all the packages can be used directly from inputs, through `legacyPackages`
 ```nix
 {
     inputs,
+    pkgs,
     ...
 }: {
     # For this to be valid, you need `inputs` in the argset above and vpkgs
@@ -59,10 +60,11 @@ Then all the packages can be used directly from inputs, through `legacyPackages`
 
 Available via `legacyPackages` as well as the `default` overlay.
 
-| Package                                                                                                                            | Status       |
-| ---------------------------------------------------------------------------------------------------------------------------------- | ------------ |
-| [`doi2bib3`](https://github.com/archisman-panigrahi/doi2bib3)                                                                      | Auto updated |
-| [`libfprint-focaltech-2808-a658`](https://github.com/Varrkan82/RTS5811-FT9366-fingerprint-linux-driver-with-VID-2808-and-PID-a658) | Pinned       |
+| Package                                                                                                                            | Status                         |
+| ---------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
+| [`doi2bib3`](https://github.com/archisman-panigrahi/doi2bib3)                                                                      | Auto updated (stable releases) |
+| [`libfprint-focaltech-2808-a658`](https://github.com/Varrkan82/RTS5811-FT9366-fingerprint-linux-driver-with-VID-2808-and-PID-a658) | Pinned                         |
+| [`org.freedesktop.FileManager1.common`](https://github.com/boydaihungst/org.freedesktop.FileManager1.common)                       | Auto updated                   |
 
 ### Espanso packages
 
