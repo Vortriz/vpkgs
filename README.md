@@ -18,8 +18,6 @@ Add this repository to your flake inputs:
         nixpkgs.url = "github:NixOS/nixpkgs?ref=nixos-unstable";
 
         vpkgs.url = "github:Vortriz/vpkgs";
-        # if you want to utilize my cache then don't set vpkgs.inputs.follows
-
         # Other inputs
         # ...
     };
