@@ -1,8 +1,4 @@
-# SPDX-FileCopyrightText: 2023 Sefa Eyeoglu <contact@scrumplex.net>
-#
-# SPDX-License-Identifier: MIT
-
-name: Update
+name: Update and cache
 
 on:
     schedule:
@@ -10,25 +6,34 @@ on:
     workflow_dispatch:
 
 jobs:
-    update-and-commit:
-        runs-on: ubuntu-24.04
-
+    update-and-cache:
+        runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v7
             - uses: cachix/install-nix-action@v31
               with:
-                  nix_path: nixpkgs=channel:nixos-unstable
-
-            - name: Set Git user info
-              run: |
-                  git config user.name 'github-actions[bot]'
-                  git config user.email 'github-actions[bot]@users.noreply.github.com'
+                  extra_nix_config: |
+                      extra-substituters = https://vortriz.cachix.org https://cache.manic.systems
+                      extra-trusted-public-keys = vortriz.cachix.org-1:j+5MefZe7ymiJVrFW7kgX0maoW/QwxN3EQnDrmd1v2I= cache.manic.systems-1:s6OZanN8Us8vRi0jVivP3qlMn0cYHBjBALKrNe5nH8s=
 
             - name: Update tack pins
               run: |
                   nix develop --command tack update
 
+            - name: Build and cache
+              env:
+                  CACHIX_AUTH_TOKEN: ${{ secrets.CACHIX_AUTH_TOKEN }}
+              run: |
+                  nix develop --command -- nix-fast-build \
+                                  --no-nom \
+                                  --skip-cached \
+                                  --retries=3 \
+                                  --cachix-cache vortriz \
+                                  --systems "x86_64-linux" \
+                                  --flake=.#legacyPackages
+
             - uses: EndBug/add-and-commit@v11
               with:
-                  default_author: github_actions
+                  author_name: github-actions[bot]
+                  author_email: github-actions[bot]@users.noreply.github.com
                   message: "chore: update"

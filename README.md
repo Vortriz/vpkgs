@@ -18,9 +18,21 @@ Add this repository to your flake inputs:
         nixpkgs.url = "github:NixOS/nixpkgs?ref=nixos-unstable";
 
         vpkgs.url = "github:Vortriz/vpkgs";
+        # if you want to utilize my cache then don't set vpkgs.inputs.follows
 
         # Other inputs
         # ...
+    };
+}
+```
+
+Optionally, you can utilize my cache. Do a rebuild once after adding this:
+
+```nix
+{
+    nix.settings = {
+        extra-substituters = [ "https://vortriz.cachix.org" ];
+        extra-trusted-public-keys = [ "vortriz.cachix.org-1:j+5MefZe7ymiJVrFW7kgX0maoW/QwxN3EQnDrmd1v2I=" ];
     };
 }
 ```

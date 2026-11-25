@@ -3,10 +3,13 @@
         { pkgs, system, ... }:
         {
             devShells.default = pkgs.mkShellNoCC {
-                packages = [
-                    pkgs.nix-init
-                ]
-                ++ [ inputs.tack.packages.${system}.default ];
+                packages =
+                    with pkgs;
+                    [
+                        nix-init
+                        nix-fast-build
+                    ]
+                    ++ [ inputs.tack.packages.${system}.default ];
 
                 TACK_NIX_CONF_TOKENS = 1;
             };
