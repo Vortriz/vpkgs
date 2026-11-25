@@ -104,9 +104,9 @@
     "type": "github",
     "owner": "nixos",
     "repo": "nixpkgs",
-    "rev": "93a9ed0a866099a230ed5146a5bb7d16fd5c9b14",
-    "narHash": "sha256-8JDgyVvWUZg5m9hNlL8Ge9aT647ng3Ukc8NPMiKNTPQ=",
-    "lastModified": 1795249095,
+    "rev": "619c39f6eac5d1ed6b8f073a9414baf7034b2356",
+    "narHash": "sha256-oa2P5WZer1A4wuhatl92JyHHEjrrOdIyuvTuI5LUi9Q=",
+    "lastModified": 1795371335,
     "public": true
   },
   "systems": {
@@ -121,9 +121,9 @@
     "type": "github",
     "owner": "manic-systems",
     "repo": "tack",
-    "rev": "a992d76e8e9c906a3714b596ba3a9b8386a817d6",
-    "narHash": "sha256-u6gAZW/m9HnyiI/QpupurIB0L3SRUsBDRvrCrJp5EMU=",
-    "lastModified": 1795391791,
+    "rev": "5fba22058c07e258e77005144373845df04aa420",
+    "narHash": "sha256-4y/PrwhX1+kEbYyD9++i03/xjeJiTp0rbD3IEwgAkfI=",
+    "lastModified": 1795612357,
     "public": true
   },
   "treefmt-nix": {
@@ -181,10 +181,10 @@
   },
   "zotmoov": {
     "type": "fixed",
-    "url": "https://github.com/wileyyugioh/zotmoov/releases/download/1.2.34/zotmoov-1.2.34-fx.xpi",
-    "sha256": "sha256-PK1oxs9DcGY3YHQ9mbEWpFxv0cF3MvUMfQM1t/IMeFQ=",
+    "url": "https://github.com/wileyyugioh/zotmoov/releases/download/1.2.35/zotmoov-1.2.35-fx.xpi",
+    "sha256": "sha256-MP6CCDRSV0knewRouiN/vOOeBlGVbB0KnDu2YGdojy4=",
     "unpack": "file",
-    "tag": "1.2.34",
-    "version": "1.2.34"
+    "tag": "1.2.35",
+    "version": "1.2.35"
   }
 }
