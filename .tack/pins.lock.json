@@ -181,10 +181,10 @@
   },
   "zotmoov": {
     "type": "fixed",
-    "url": "https://github.com/wileyyugioh/zotmoov/releases/download/1.2.35/zotmoov-1.2.35-fx.xpi",
-    "sha256": "sha256-MP6CCDRSV0knewRouiN/vOOeBlGVbB0KnDu2YGdojy4=",
+    "url": "https://github.com/wileyyugioh/zotmoov/releases/download/1.2.36/zotmoov-1.2.36-fx.xpi",
+    "sha256": "sha256-567lXYmmwTRL0W9TOQVp7P8ZwniIj2K22A2bxXrh0yY=",
     "unpack": "file",
-    "tag": "1.2.35",
-    "version": "1.2.35"
+    "tag": "1.2.36",
+    "version": "1.2.36"
   }
 }
